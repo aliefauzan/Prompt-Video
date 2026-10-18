@@ -15,6 +15,25 @@ ROOT = Path(__file__).resolve().parents[2]
 COLS = 3
 THUMB_W = 960
 
+HOW_IT_WORKS = [
+    "## How it works",
+    "",
+    "![Frame, person mask, and two styles made from the same mask](_source/how_it_works.jpg)",
+    "",
+    "1. **Split the video into frames.** ffmpeg saves 12 frames per second of the clip as PNG images.",
+    "2. **Find the people.** Apple's Vision framework, built into macOS, makes a mask for every frame:",
+    "   white where a person is, black for the background. It runs on your Mac, nothing is uploaded.",
+    "   Some styles also use Vision to find faces, hands or body pose.",
+    "3. **Restyle each frame.** Each style's `render.py` is plain Python (numpy, OpenCV, Pillow).",
+    "   It uses the mask to treat people and background differently: bold comic colours on the people",
+    "   in Pop Art, or see-through glass people in Glass Cloak. Dots, grain, glow and outlines are all",
+    "   drawn by code, not by AI.",
+    "4. **Rebuild the video.** `make_video.py` joins the styled frames back into a 12 fps mp4 with the",
+    "   original sound, plus an animated preview.",
+    "",
+    "Claude Code wrote every `render.py`, and it adapts the script to your video when you use one.",
+]
+
 HOW_TO = [
     "## How to use",
     "",
@@ -90,6 +109,8 @@ def main():
         "",
         f"{len(items)} frame-by-frame video restyle prompts, each shown on the same test clip.",
         "Click a preview to play the video, or a name to open its prompt.",
+        "",
+        *HOW_IT_WORKS,
         "",
         *HOW_TO,
         "",
