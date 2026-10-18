@@ -18,8 +18,9 @@ THUMB_W = 960
 HOW_TO = [
     "## How to use",
     "",
-    "Every example here was made on a Mac with [Claude Code](https://claude.com/claude-code) and plain Python.",
-    "No image AI was used, and you do not need to clone this repo. To restyle your own video:",
+    "Every example here was made on a Mac with [Claude Code](https://claude.com/claude-code) and plain Python,",
+    "plus Apple's built-in Vision framework to find people in each frame.",
+    "No generative image AI was used, and you do not need to clone this repo. To restyle your own video:",
     "",
     "1. Install [Claude Code](https://claude.com/claude-code), `ffmpeg` and Python 3 on an Apple Silicon Mac.",
     "2. Pick a style from the gallery below and copy its folder name, for example `62-tilt-shift-miniature`.",
@@ -36,6 +37,11 @@ HOW_TO = [
     "   ```",
     "4. Open `out/example.mp4` when it finishes.",
     "5. To change the look, tell Claude what to change, for example \"more blur\" or \"less grain\".",
+    "",
+    "**Want a richer, AI-generated look?** Each style's `prompt.md` is written for",
+    "Seedream 5.0 Pro, a generative image model. Paste it into an AI video agent that can use Seedream",
+    "(for example [invideo AI](https://invideo.io/)) together with your video. Results are more detailed,",
+    "but it costs credits and the output changes from run to run. The examples above did not use it.",
 ]
 
 
