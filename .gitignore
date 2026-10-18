@@ -1,0 +1,9 @@
+# local tooling
+_source/.venv/
+.remember/
+__pycache__/
+*.pyc
+.DS_Store
+
+# symlink to the original clip outside the repo (frames + audio are committed instead)
+_source/original.mov

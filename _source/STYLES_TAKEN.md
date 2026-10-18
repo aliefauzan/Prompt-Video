@@ -1,0 +1,101 @@
+# Styles already taken (do not propose these or near-duplicates)
+
+Kept up to date by the main session. Folder = styles/<name>.
+
+- 01-punk-photocopy-collage — Punk Photocopy Collage
+- 02-vhs-camcorder — VHS Camcorder Home Video
+- 03-super8-film-burn — Super 8 Film Burn
+- 04-y2k-digicam-flash — Y2K Digicam Flash
+- 05-datamosh-glitch — Datamosh Glitch
+- 06-risograph-duotone — Risograph Duotone Print
+- 07-pop-art-comic-halftone — Pop Art Comic Halftone
+- 08-scrapbook-sticker-collage — Scrapbook Sticker Collage
+- 09-cyanotype-blueprint — Cyanotype Sun Print
+- 10-anime-cel-shade — Anime Cel Shade
+- 11-pixel-art-dither — 16-Bit Pixel Art Dither
+- 12-ascii-terminal — ASCII Terminal Phosphor
+- 13-neon-scribble-outline — Neon Scribble Outline
+- 14-magazine-cover-typography — Magazine Cover Typography
+- 15-y2k-chrome-frutiger-aero — Y2K Chrome / Frutiger Aero
+- 16-thermal-camera — Thermal Camera
+- 17-double-exposure-dreamy — Double Exposure Dreamy
+- 18-pencil-sketch-rotoscope — Pencil Sketch Rotoscope
+- 19-watercolor-ink-wash — Watercolor Ink Wash
+- 20-polaroid-photo-dump — Polaroid Photo Dump
+- 21-stained-glass-mosaic — Stained Glass Mosaic
+- 22-glass-invisibility-cloak — Glass Invisibility Cloak
+- 23-boogley-doodle-creatures — Boogley Doodle Creatures
+- 24-cobalt-pixel-halftone — Cobalt Pixel Halftone
+- 25-red-pencil-mixed-media — Red Pencil Mixed Media
+- 26-slow-shutter-smear — Slow Shutter Smear
+- 27-signal-relief-scanlines — Signal Relief Scanlines
+- 28-hand-cranked-silent-film — Hand-Cranked Silent Film
+- 29-hyperspace-burst — Hyperspace Burst
+- 30-spiderverse-comic-offset — Spider-Verse Comic Offset
+- 31-sin-city-noir-red — Sin City Noir Red
+- 32-synthwave-outrun — Synthwave Outrun
+- 33-aerochrome-infrared
+- 34-cross-stitch-embroidery
+- 35-ukiyoe-woodblock
+- 36-spray-stencil-graffiti
+- 37-claymation-plasticine
+- 38-cctv-night-vision — CCTV Night Vision
+- 39-lidar-point-cloud
+- 40-low-poly-3d
+- 41-holographic-trading-card
+- 42-blob-tracking
+- 43-dark-stage-spotlight
+- 44-broken-mirror-shards
+- 45-marble-statue
+- 46-1950s-editorial-poster
+- 47-two-tone-screen-print
+- 48-charcoal-expressionism
+- 49-chaotic-red-ink
+- 50-impasto-oil-painting
+- 51-ghibli-painted-anime
+- 52-retro-90s-cartoon
+- 53-90s-comic-book
+- 54-teal-orange-anamorphic
+- 55-cyberpunk-neon-city
+- 56-prismatic-dreamscape
+- 57-surrealist-dali-magritte
+- 58-lego-brick-build
+- 59-3d-kawaii-chibi
+- 60-floral-maximalism-gouache
+- 61-colored-marker-sketch
+- 62 Tilt-Shift Miniature(planned, see discovery/MERGED.md)
+- 63 Halation Red-Glow Film (CineStill 800T)(planned, see discovery/MERGED.md)
+- 64 Wes Anderson Pastel Symmetry(planned, see discovery/MERGED.md)
+- 65 Giallo Gel Lighting(planned, see discovery/MERGED.md)
+- 66 Weirdcore / Dreamcore (includes D4 "Chinese millennium dreamcore" as a variant note)(planned, see discovery/MERGED.md)
+- 67 Backrooms Liminal Yellow(planned, see discovery/MERGED.md)
+- 68 Depth-Style Fog Silhouette(planned, see discovery/MERGED.md)
+- 69 Mucha Art Nouveau(planned, see discovery/MERGED.md)
+- 70 Pixel Stretch Slit Streak(planned, see discovery/MERGED.md)
+- 71 Pixel Sort Glitch(planned, see discovery/MERGED.md)
+- 72 Slit-Scan Time-Slice(planned, see discovery/MERGED.md)
+- 73 Chronophotography Strobe(planned, see discovery/MERGED.md)
+- 74 Needle-Felt Wool World(planned, see discovery/MERGED.md)
+- 75 Papercraft Layered Diorama(planned, see discovery/MERGED.md)
+- 76 Sand Animation Lightbox(planned, see discovery/MERGED.md)
+- 77 Shadow Puppet Theatre(planned, see discovery/MERGED.md)
+- 78 Manga Ink Screentone(planned, see discovery/MERGED.md)
+- 79 Banknote Engraving(planned, see discovery/MERGED.md)
+- 80 American Traditional Tattoo Flash(planned, see discovery/MERGED.md)
+- 81 Thermal Fax Receipt Print(planned, see discovery/MERGED.md)
+- 82 Retro 80s-90s OVA Anime(planned, see discovery/MERGED.md)
+- 83 Rubber-Hose 1930s Cartoon(planned, see discovery/MERGED.md)
+- 84 Arcane Painterly 3D(planned, see discovery/MERGED.md)
+- 85 Drawing Time-Lapse Reveal(planned, see discovery/MERGED.md)
+- 86 PS1 Low-Poly Wobble(planned, see discovery/MERGED.md)
+- 87 GTA Loading-Screen Illustration(planned, see discovery/MERGED.md)
+- 88 Persona 5 Red-Black Cutout UI(planned, see discovery/MERGED.md)
+- 89 Windows 95 Desktop UI(planned, see discovery/MERGED.md)
+- 90 Kaleidoscope Mirror
+- 91 Liquid Light Show
+- 92 Liquid Chrome Flow
+- 93 Topographic Contour Lines
+- 94 X-Ray Skeleton Scan
+- 95 Red-Cyan Anaglyph 3D
+- 96 Bad Apple 1-Bit Silhouette
+- 97 Hand-Drawn Frame-by-Frame FX
