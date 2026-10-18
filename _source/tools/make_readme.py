@@ -19,24 +19,23 @@ HOW_TO = [
     "## How to use",
     "",
     "Every example here was made on a Mac with [Claude Code](https://claude.com/claude-code) and plain Python.",
-    "No image AI was used. To restyle your own video the same way:",
+    "No image AI was used, and you do not need to clone this repo. To restyle your own video:",
     "",
-    "1. Install [Claude Code](https://claude.com/claude-code), `ffmpeg` and Python 3 on a Mac.",
-    "2. Clone this repo and open the folder in Claude Code:",
-    "   ```bash",
-    "   git clone https://github.com/aliefauzan/Prompt-Video.git",
-    "   cd Prompt-Video",
-    "   claude",
-    "   ```",
-    "3. Pick a style from the gallery below and note its number.",
-    "4. Tell Claude Code, replacing the path and the number:",
+    "1. Install [Claude Code](https://claude.com/claude-code), `ffmpeg` and Python 3 on an Apple Silicon Mac.",
+    "2. Pick a style from the gallery below and copy its folder name, for example `62-tilt-shift-miniature`.",
+    "3. Open Claude Code in an empty folder and paste this, replacing the video path and the folder name:",
     "   ```text",
-    "   Restyle /path/to/my-video.mov in style 62. Extract frames at 12 fps into my/frames,",
-    "   make person masks with _source/tools/segment, adapt styles/62-*/render.py to my frames,",
-    "   then build the video with _source/tools/make_video.py into my/.",
+    "   Restyle /path/to/my-video.mov in style 62-tilt-shift-miniature from https://github.com/aliefauzan/Prompt-Video",
+    "   (do not clone the repo).",
+    "   1. From https://raw.githubusercontent.com/aliefauzan/Prompt-Video/main/ download _source/tools/segment,",
+    "      _source/tools/make_video.py, and every file in styles/62-tilt-shift-miniature/ except example.mp4,",
+    "      preview.webp, frames/ and refs/. Install numpy, Pillow and opencv-python in a venv if needed.",
+    "   2. Extract my video's frames at 12 fps into frames/ and make person masks with ./segment frames masks.",
+    "   3. Adapt render.py to my frames (size, frame count, anything tied to its test clip) and render every frame.",
+    "   4. Build the video with make_video.py into out/, using my video's own sound.",
     "   ```",
-    "5. Open `my/example.mp4` when it finishes.",
-    "6. To change the look, tell Claude what to change, for example \"more blur\" or \"less grain\".",
+    "4. Open `out/example.mp4` when it finishes.",
+    "5. To change the look, tell Claude what to change, for example \"more blur\" or \"less grain\".",
 ]
 
 
@@ -69,7 +68,8 @@ def cell(num, name, folder):
     video = f' · <a href="styles/{folder}/example.mp4">▶ video</a>' if has_video else ""
     return (f'<td width="33%" valign="top">'
             f'<a href="styles/{folder}/{target}"><img src="styles/{folder}/{img}" alt="{name}" width="100%"></a>'
-            f'<br><b>{num}. <a href="styles/{folder}/prompt.md">{name}</a></b>{video}</td>')
+            f'<br><b>{num}. <a href="styles/{folder}/prompt.md">{name}</a></b>{video}'
+            f'<br><code>{folder}</code></td>')
 
 
 def main():

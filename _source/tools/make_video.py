@@ -4,7 +4,8 @@ usage: python -I make_video.py <styled_frames_dir> <out_dir> [audio_file]
 
 <styled_frames_dir> must hold every frame, frame_001.png .. frame_NNN.png with
 no gaps, rendered in the style (12 fps, same numbering as _source/frames).
-audio_file defaults to _source/source_audio.m4a. Writes into <out_dir>:
+audio_file defaults to _source/source_audio.m4a; pass "none" (or a missing
+file) for a silent video. Writes into <out_dir>:
   example.mp4   full clip, 12 fps, H.264, with the original audio
   preview.webp  animated loop, 400 px wide, for the README
 The frames dir can be a temp folder: nothing in it is kept.
@@ -29,14 +30,15 @@ def main():
         sys.exit(f"frames must be frame_001.png .. frame_NNN.png with no gaps ({count} found)")
     out.mkdir(parents=True, exist_ok=True)
 
+    sound = audio.is_file()
     subprocess.run([
         "ffmpeg", "-y", "-v", "error",
         "-framerate", "12", "-i", str(frames / "frame_%03d.png"),
-        "-i", str(audio),
-        "-map", "0:v", "-map", "1:a", "-shortest",
+        *(["-i", str(audio), "-map", "0:v", "-map", "1:a", "-shortest"] if sound else []),
         "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2",
         "-c:v", "libx264", "-preset", "slow", "-crf", "24", "-pix_fmt", "yuv420p",
-        "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart",
+        *(["-c:a", "aac", "-b:a", "160k"] if sound else ["-an"]),
+        "-movflags", "+faststart",
         str(out / "example.mp4"),
     ], check=True)
 
