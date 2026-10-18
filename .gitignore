@@ -7,3 +7,7 @@ __pycache__/
 
 # symlink to the original clip outside the repo (frames + audio are committed instead)
 _source/original.mov
+
+# your own runs
+.venv/
+my/
